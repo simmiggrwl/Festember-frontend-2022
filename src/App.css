@@ -1,38 +1,18 @@
-.App {
-  text-align: center;
+@font-face {
+	font-family: 'Poppins';
+	src: local('Poppins'),
+		url(./assets/fonts/Poppins/Poppins-SemiBold.ttf) format('truetype');
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+	font-family: 'Poppins';
+  font-weight: bold;
+	src: local('Poppins'),
+		url(./assets/fonts/Poppins/Poppins-Bold.ttf) format('truetype');
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@font-face {
+	font-family: 'Atlantic-Cruise';
+	src: local('Atlantic-Cruise'),
+		url(./assets/fonts/atlantic_cruise/Atlantic_Cruise-Demo.ttf) format('truetype');
 }
