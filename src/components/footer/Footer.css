@@ -1,0 +1,33 @@
+#footer{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 2em 0;
+  font-size: 1em;
+  color: #79E2FB;
+  text-transform: uppercase;
+  font-family: Poppins;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+
+.footer-link{
+  padding: 0 0.25em;
+  cursor: pointer;
+}
+
+.heart{
+  padding: 0 0.25em;
+  color: red;
+  font-size: 1em;
+}
+
+/* Phones */
+@media (max-width: 640px) {
+  #footer{
+    font-size: 0.75em;
+  }
+}

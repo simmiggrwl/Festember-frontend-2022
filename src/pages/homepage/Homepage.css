@@ -60,3 +60,14 @@
   background-color: #50b6cf;
   transform: scale(1.1);
 }
+
+/* Phones */
+@media (max-width: 640px) {
+  .title{
+    font-size: 6rem;
+    margin-bottom: 1rem;
+  }
+  .title-suffix{
+    font-size: 1rem;
+  }
+}
