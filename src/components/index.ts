@@ -13,3 +13,4 @@ export { default as ListLayout } from "./ListLayout/ListLayout";
 export { default as Timeline } from "./Timeline/Timeline";
 export { default as Page } from "./Page/Page";
 export { default as ProtectedRoute } from "./ProtectedRoute/ProtectedRoute";
+export { default as DAuthLogin } from "./DAuthLogin/DAuthLogin";

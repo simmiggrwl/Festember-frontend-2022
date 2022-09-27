@@ -1,0 +1,19 @@
+.dauthButton{
+	border: 2px solid #79e2fb;
+	color: #ffffff;
+    border-radius: 0 !important;
+    text-transform: uppercase;
+	padding: 5px 1.8rem;
+	font-size: 18px;
+	font-family: "Poppins";
+	font-weight: 700;
+	letter-spacing: 0em;
+	text-align: center;
+	cursor: pointer;
+	transition: all 0.2s ease-in-out;
+}
+
+.dauthButton:hover{
+	background: #79e2fb;
+	color: #000000;
+}

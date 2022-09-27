@@ -69,6 +69,7 @@ export default function Workshops() {
 	const handleWorkshopRegister = () => {
 		setIsRegisterLoading(true);
 		if (!isLoggedIn) {
+			toast.dismiss("ticket-sales-toast");
 			navigate("/login");
 			toast.error("Please login to register for a workshop");
 		} else if (choosenSlot === "") {
@@ -151,25 +152,23 @@ export default function Workshops() {
 						/>
 					)}
 				</div>
-
-				<div className={styles.workshopDetails}>
-					<h3>Workshop Description</h3>
-					<p>
-						{workshopDetails &&
-							workshopDetails[clusterIndex]?.workshop_desc}
-					</p>
-					<br />
-					{/* <h3>Workshop Details</h3>
-					<p>{content[clusterIndex].details}</p>
-					<br /> */}
-					<button
-						className={styles.registerButton}
-						onClick={onToggle}
-						type="button"
-					>
-						Register here
-					</button>
-				</div>
+				{workshopDetails && (
+					<div className={styles.workshopDetails}>
+						<h3>Workshop Description</h3>
+						<p>
+							{workshopDetails &&
+								workshopDetails[clusterIndex]?.workshop_desc}
+						</p>
+						<br />
+						<button
+							className={styles.registerButton}
+							onClick={onToggle}
+							type="button"
+						>
+							Register here
+						</button>
+					</div>
+				)}
 				<Modal
 					isOpen={isOpen}
 					onClose={() => {

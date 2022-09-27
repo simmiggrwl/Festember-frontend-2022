@@ -1,7 +1,7 @@
 import styles from "./styles.module.css";
 import { Center, Flex, Link } from "@chakra-ui/react";
 import { config } from "../../../config";
-
+import { Link as RouterLink } from "react-router-dom";
 const routes = [
 	{ name: "instructions", path: "/hospitality/instructions" },
 	{ name: "how to reach", path: "/hospitality/how_to_reach" },
@@ -24,7 +24,8 @@ const Hospitality = () => {
 					{routes.map((route) => {
 						return (
 							<Link
-								href={`${config.basePath}${route.path}`}
+								as={RouterLink}
+								to={`${route.path}`}
 								key={route.name}
 							>
 								<Center

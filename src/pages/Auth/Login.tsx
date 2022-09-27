@@ -10,6 +10,7 @@ import { useNavigate, useLocation } from "react-router-dom";
 import { toast } from "react-hot-toast";
 import { userContext } from "../../contexts/UserContext";
 import { config } from "../../../config";
+// import { DAuthLogin } from "../../components"
 import styles from "./styles.module.css";
 
 interface LocationState {
@@ -114,7 +115,7 @@ const Login = () => {
 						>
 							LOGIN
 						</button>
-
+						{/* <DAuthLogin /> */}
 						<button
 							className={`${styles.button} ${styles.rightButton}`}
 							onClick={() => navigate("/register")}

@@ -7,19 +7,17 @@ import { Link as RouterLink } from "react-router-dom";
 import { isMobile } from "react-device-detect";
 
 const routes = [
-	{ name: "Home", path: "/#home" },
+	{ name: "Home", path: "/" },
 	{ name: "Events", path: "/events" },
 	{ name: "Workshops", path: "/workshops" },
-	{ name: "About Us", path: "/#aboutUs" },
-	{ name: "Contact Us", path: "/#contactUs" },
-	// { name: "Sponsors", path: "/sponsors" },
+	{name: "Informals", path: "/informals"},
 	{ name: "Wildfire", path: "/wildfire" },
 	{ name: "Hospitality", path: "/hospitality" },
-	{
-		name: "Timeline",
-		path: isMobile ? "/timeline" : "/#timeline",
-	},
 ];
+
+if (isMobile) {
+	routes.push({ name: "Timeline", path: "/timeline" });
+}
 
 const Navbar = ({ onClose }: any) => {
 	return (
@@ -34,7 +32,15 @@ const Navbar = ({ onClose }: any) => {
 					{routes.map((route) => {
 						return (
 							<Link
-								href={`${config.basePath}${route.path}`}
+								as={
+									route.path.startsWith("/#") ? undefined : RouterLink
+								}
+								to={`${route.path}`}
+								href={
+									route.path.startsWith("/#")
+										? `${config.basePath}${route.path}`
+										: undefined
+								}
 								key={route.name}
 							>
 								<Center
@@ -56,7 +62,15 @@ const Navbar = ({ onClose }: any) => {
 					{routes.map((route, key) => {
 						return (
 							<Link
-								href={`${config.basePath}${route.path}`}
+								as={
+									route.path.startsWith("/#") ? undefined : RouterLink
+								}
+								to={`${route.path}`}
+								href={
+									route.path.startsWith("/#")
+										? `${config.basePath}${route.path}`
+										: undefined
+								}
 								_hover={{ border: "none" }}
 								key={route.name}
 							>

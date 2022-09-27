@@ -65,7 +65,7 @@ backdrop-filter: blur(4.3px);
     }
 
   .workshops {
-  font-size: 12vh;
+  font-size: 8vh;
   font-family: 'Atlantic-Cruise';
   margin-top: 1rem;
   background : -webkit-linear-gradient(#FFFFFF, #3AD4F8);
@@ -97,6 +97,13 @@ backdrop-filter: blur(4.3px);
         transform: scale(1.1);
       }
 
+.infromalsButtonGroup {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 @media (max-height: 1000px){
 
     .workshopDetails{
@@ -118,6 +125,10 @@ backdrop-filter: blur(4.3px);
       height: 85vh;
     }
 
+    .workshopCarousel{
+        height: 50rem;
+    }
+
     .workshopDetails h3{
         font-size: 1.3rem;
     }
@@ -130,7 +141,7 @@ backdrop-filter: blur(4.3px);
     }
 
     .workshops {
-        font-size: 12vh;
+        font-size: 8vh;
         margin-bottom: 10rem;
         }
   }
@@ -138,7 +149,8 @@ backdrop-filter: blur(4.3px);
 @media only screen and (max-width: 660px)  {
 
     .workshops{
-        font-size: 10vh;
+        font-size: 6vh;
+        position: relative;
         margin-bottom: 5rem;
     }
     .workshopDetails{
@@ -153,8 +165,24 @@ backdrop-filter: blur(4.3px);
     .modalHead{
         font-size: 1.5rem;
     }
+
+    .workshopCarousel{
+        height: 30rem;
+    }
 }
 
+
+@media only screen and (max-width: 460px)  {
+    .workshops{
+        font-size: 4vh;
+        position: relative;
+        margin-bottom: 5rem;
+    }
+
+    .workshopCarousel{
+        height: 20rem;
+    }
+}
 
 
 

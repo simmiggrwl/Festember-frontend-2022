@@ -7,6 +7,7 @@ export { default as Events } from "./Events/Events";
 export { default as Wildfire } from "./Wildfire/Wildfire";
 export { default as EventsPage } from "./EventsPage/EventsPage";
 export { default as Workshops } from "./Workshops/Workshops";
+export { default as Informals } from "./Workshops/Informals";
 export { default as Accommodation } from "./Accommodation/Accommodation";
 export { default as Hospitality } from "./Hospitality/Hospitality";
 export { default as Instructions } from "./Instructions/Instructions";

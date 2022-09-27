@@ -327,7 +327,7 @@ const Register = () => {
 							<Select
 								className={styles.formInput}
 								color="black"
-								value={registerForm.user_year}
+								value={registerForm.user_degree}
 								onChange={(e) =>
 									handleFormChange("user_degree", e.target.value)
 								}

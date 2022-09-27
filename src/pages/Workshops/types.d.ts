@@ -12,3 +12,10 @@ interface SlotDetailsType {
     slot_start_time: string;
     slot_end_time: string;
 }
+
+interface InformalsDetailsType {
+    informals_id: number;
+    informals_name: string;
+    informals_desc: string;
+    informals_image_name: string;
+}
